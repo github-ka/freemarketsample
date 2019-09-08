@@ -1,4 +1,5 @@
 
+
 // フッターを下部に固定
 $(function () {
   var $ftr = $('#footer');
@@ -6,3 +7,4 @@ $(function () {
     $ftr.attr({ 'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
   }
 });
+
