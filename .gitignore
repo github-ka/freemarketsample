@@ -1,2 +1,2 @@
-#logファイルのerror.logファイルの中身→全部無視
-log/php_error.log/
+#logフォルダ→全部無視
+log/
