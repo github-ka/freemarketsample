@@ -91,12 +91,10 @@ function validEmailDup($email)
     if(empty(array_shift($result))) {
       $err_msg['email'] = MSG08;
     }
-
   } catch (Exception $e) {
     error_log('エラー発生', $e->getMessage());
     $err_msg['email'] = MSG07;
   }
-  exit;
 
 }
 
@@ -167,9 +165,6 @@ if (!empty($_POST)) {
       exit;
       //バリデーションエラーがない場合
       if (empty($err_msg)) {
-
-        dbConnect();
-
 
         //SQL文（クエリー作成）
         $stmt = $dbh->prepare('INSERT INTO users (email,pass,login_time) VALUES (:email,:pass,:login_time)');
