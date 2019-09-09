@@ -1,2 +1,2 @@
 #logフォルダ→全部無視
-log/
+log/error.log 
