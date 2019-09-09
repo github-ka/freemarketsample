@@ -413,7 +413,6 @@ a.panel:hover {
 label{
   display: block;
 }
-
 input[type="text"], input[type="number"], input[type="password"], .form select,
 textarea {
   margin-bottom: 15px;
